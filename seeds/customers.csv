@@ -1,0 +1,11 @@
+customer_id,name,email,signup_date
+1,Acme Corp,ops@acme.com,2024-01-15
+2,Globex,info@globex.com,2024-02-03
+3,Initech,contact@initech.com,2024-02-28
+4,Umbrella Inc,sales@umbrella.com,2024-03-10
+5,Hooli,hello@hooli.com,2024-03-22
+6,Soylent,help@soylent.com,2024-04-01
+7,Pied Piper,team@piedpiper.com,2024-04-18
+8,Vandelay Industries,info@vandelay.com,2024-05-02
+9,Massive Dynamic,ops@massive.com,2024-05-20
+10,Stark Industries,hello@stark.com,2024-06-05

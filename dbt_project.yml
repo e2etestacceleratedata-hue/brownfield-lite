@@ -1,0 +1,30 @@
+name: 'lifecycle'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbt_fab_spark'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  lifecycle:
+    +materialized: table
+
+seeds:
+  lifecycle:
+    +schema: raw
+    customers:
+      +column_types:
+        customer_id: int
+        name: string
+        email: string
+        signup_date: date

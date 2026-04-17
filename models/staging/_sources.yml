@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw source tables loaded via dbt seed"
+    schema: raw
+    tables:
+      - name: customers
+        description: "Raw customer data seeded from seeds/customers.csv"
+        columns:
+          - name: customer_id
+            description: "Unique customer identifier"
+          - name: name
+            description: "Customer company name"
+          - name: email
+            description: "Customer contact email"
+          - name: signup_date
+            description: "Date the customer signed up"
