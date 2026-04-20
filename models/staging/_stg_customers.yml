@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Staging layer for customer data with standardized column names and trimmed strings
+    columns:
+      - name: customer_id
+        description: Primary key for customers
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_name
+        description: Customer company name (trimmed)
+        data_tests:
+          - not_null
+
+      - name: email
+        description: Customer contact email (trimmed)
+        data_tests:
+          - not_null
+
+      - name: signup_date
+        description: Date when customer signed up
